@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import weightLossCircle from "../assets/weight_loss_circle.svg";
 import phone from "../assets/phone.svg";

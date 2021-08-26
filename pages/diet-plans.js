@@ -46,7 +46,7 @@ const DietPlans = () => {
     <div className="DietPlans">
       <Navbar />
       <div className="flex flex-col items-center justify-center">
-        <h1 className="uppercase text-4xl md:text-5xl font-medium mt-20 mb-2">
+        <h1 className="uppercase text-green text-4xl md:text-5xl font-medium mt-20 mb-2">
           Diet Plans
         </h1>
         <p className="md:text-2xl mb-14">
