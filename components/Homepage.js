@@ -11,7 +11,7 @@ const Homepage = () => {
         <div className="flex items-center pb-20">
           <div>
             <div className="w-[236px] flex flex-col">
-              <h1 className="uppercase text-5xl lg:text-6xl font-extralight mb-3">
+              <h1 className="uppercase text-6xl lg:text-6xl font-extralight mb-3">
                 Feel better, happy, healthy.
               </h1>
               <p className="text-gray-400 lg:text-xl mb-5 font-quicksand">

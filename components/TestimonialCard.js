@@ -12,9 +12,9 @@ const TestimonialCard = ({ image, name, title }) => {
       data-aos="zoom-in-up"
       className="TestimonialCard bg-darkGreen py-20 px-8 h-auto mx-10 rounded-xl mb-10"
     >
-      <div className="flex items-center">
-        <div className="pr-5">
-          <Image width={500} height={500} src={image} objectFit="contain" />
+      <div className="flex flex-col sm:flex-row items-center">
+        <div className="pr-5 mb-4">
+          <Image layout="fixed" src={image} objectFit="cover" />
         </div>
 
         <div className="text-white">

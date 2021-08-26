@@ -6,7 +6,7 @@ import phone from "../assets/phone.svg";
 const LoseWeight = () => {
   return (
     <div className="flex relative justify-center items-center w-full h-screen gradient">
-      <div className="sm:pr-10">
+      <div className="hidden sm:inline-flex sm:pr-10">
         <Image
           src={weightLossCircle}
           width={300}
@@ -16,7 +16,7 @@ const LoseWeight = () => {
       </div>
 
       <div className="w-[50%] py-36">
-        <h1 className="font-quicksand text-5xl uppercase font-semibold text-white mb-3">
+        <h1 className="font-quicksand text-4xl uppercase font-semibold text-white mb-3">
           Lose weight and keep it off with our app!
         </h1>
         <p className="mb-5 font-quicksand lg:text-xl">
@@ -26,7 +26,7 @@ const LoseWeight = () => {
           Learn More
         </button>
       </div>
-      <div className="phone hidden sm:inline-flex absolute bottom-0 right-0">
+      <div className="hidden sm:inline-flex absolute bottom-0 right-0">
         <Image src={phone} width={300} height={300} objectFit="cover" />
       </div>
     </div>

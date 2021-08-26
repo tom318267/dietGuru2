@@ -47,10 +47,10 @@ const DietPlans = () => {
       <Navbar />
       <div className="DietPlans">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="uppercase text-green font-semibold text-4xl md:text-5xl font-medium mt-20 mb-2">
+          <h1 className="uppercase text-green font-semibold text-3xl sm:text-4xl md:text-5xl mt-20 mb-2">
             Diet Plans
           </h1>
-          <p className="md:text-2xl mb-14">
+          <p className="md:text-2xl text-sm sm:text-xl mb-14 px-6">
             Choose a plan to get started on your weight loss journey!
           </p>
         </div>

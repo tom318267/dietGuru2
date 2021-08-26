@@ -73,7 +73,7 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Link key={item.name} href={item.href}>
-                  <h3 className="text-white font-quicksand block px-3 py-2 cursor-pointer rounded-md font-petrona text-base font-medium">
+                  <h3 className="text-white font-quicksand block px-3 py-2 cursor-pointer rounded-md hvr-underline-from-right font-petrona text-base font-medium">
                     {item.name}
                   </h3>
                 </Link>
