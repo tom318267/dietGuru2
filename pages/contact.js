@@ -32,6 +32,9 @@ const Contact = () => {
               cols="30"
               rows="10"
             ></textarea>
+            <button className="bg-darkGreen text-white mb-10 font-quicksand font-semibold py-2 px-4 rounded-full hover:shadow-xl active:scale-90 transition duration-150">
+              Submit
+            </button>
           </div>
 
           <div className="font-quicksand">
