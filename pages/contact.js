@@ -18,19 +18,28 @@ const Contact = () => {
           <h1 className="uppercase text-4xl md:text-5xl mb-2 text-green font-semibold">
             Contact Us
           </h1>
-          <p className="md:text-2xl mb-12 text-xs sm:text-xl">
+          <p className="md:text-2xl mb-12 text-sm sm:text-xl">
             Reach out to us. We’ll be glad to answer any of your questions!
           </p>
         </div>
 
         <div className="flex flex-col items-center sm:flex-row justify-evenly">
-          <div className="flex flex-col w-full sm:w-1/2 px-6">
-            <input className="border contact-input" type="text" />
-            <input className="border contact-input" type="text" />
+          <div className="flex flex-col w-full sm:w-1/2 px-6 font-quicksand">
+            <input
+              className="border contact-input"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              className="border contact-input"
+              type="text"
+              placeholder="Subject"
+            />
             <textarea
               className="border contact-input"
               cols="30"
               rows="10"
+              placeholder="Message"
             ></textarea>
             <button className="bg-darkGreen text-white mb-10 font-quicksand font-semibold py-2 px-4 rounded-full hover:shadow-xl active:scale-90 transition duration-150">
               Submit
