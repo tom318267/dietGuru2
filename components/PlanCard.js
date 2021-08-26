@@ -1,5 +1,5 @@
 import React from "react";
-import CheckIcon from "@material-ui/icons/Check";
+import { CheckIcon } from "@heroicons/react/outline";
 
 const PlanCard = ({ color, price, plan, planList }) => {
   return (
@@ -19,8 +19,8 @@ const PlanCard = ({ color, price, plan, planList }) => {
         <div>
           <ul className="list-disc space-y-8 px-8 mb-6">{planList}</ul>
         </div>
-        <button className="bg-white text-black w-11/12 py-2 rounded-full text-md shadow-lg font-semibold hover:shadow-xl active:scale-90 transition duration-150">
-          <CheckIcon className="relative bottom-0.5" /> Select Plan
+        <button className="bg-white flex justify-center items-center text-black w-11/12 py-2 rounded-full text-md md:text-lg shadow-lg font-semibold hover:shadow-xl active:scale-90 transition duration-150">
+          <CheckIcon className="h-10" /> Select Plan
         </button>
       </div>
     </div>

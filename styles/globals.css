@@ -59,4 +59,19 @@
   .PlanCard {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+
+  .contact-input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  .contact-input:focus {
+    outline-color: #4ba82a;
+  }
+
+  .social-icons .MuiSvgIcon-root {
+    font-size: 40px;
+    color: #4ba82a;
+  }
 }

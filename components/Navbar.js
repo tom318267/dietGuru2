@@ -3,6 +3,7 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import dietGuru from "../assets/diet_guru.svg";
+import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
@@ -41,29 +42,25 @@ const Navbar = () => {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
                 <div className="flex-shrink-0 flex items-center">
-                  <div className="relative flex items-center h-10 cursor-pointer">
-                    <Image
-                      src={dietGuru}
-                      width={120}
-                      height={120}
-                      objectFit="contain"
-                    />
-                  </div>
+                  <Link href="/">
+                    <div className="relative flex items-center h-10 cursor-pointer">
+                      <Image
+                        src={dietGuru}
+                        width={120}
+                        height={120}
+                        objectFit="contain"
+                      />
+                    </div>
+                  </Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-2 font-quicksand relative top-0.5">
+                  <div className="flex text-white space-x-2 font-quicksand relative top-0.5">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          "text-white text-lg hvr-underline-from-right",
-                          "px-3 py-2 text-md font-medium"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </a>
+                      <Link key={item.name} href={item.href}>
+                        <h3 className="text-white text-lg hvr-underline-from-right px-3 py-2 text-md font-medium cursor-pointer">
+                          {item.name}
+                        </h3>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -75,17 +72,11 @@ const Navbar = () => {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className={classNames(
-                    "text-white font-quicksand",
-                    "block px-3 py-2 rounded-md font-petrona text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
-                >
-                  {item.name}
-                </a>
+                <Link key={item.name} href={item.href}>
+                  <h3 className="text-white font-quicksand block px-3 py-2 cursor-pointer rounded-md font-petrona text-base font-medium">
+                    {item.name}
+                  </h3>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>

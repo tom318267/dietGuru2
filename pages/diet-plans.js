@@ -43,38 +43,40 @@ const DietPlans = () => {
   );
 
   return (
-    <div className="DietPlans">
+    <>
       <Navbar />
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="uppercase text-green text-4xl md:text-5xl font-medium mt-20 mb-2">
-          Diet Plans
-        </h1>
-        <p className="md:text-2xl mb-14">
-          Choose a plan to get started on your weight loss journey!
-        </p>
-      </div>
+      <div className="DietPlans">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="uppercase text-green font-semibold text-4xl md:text-5xl font-medium mt-20 mb-2">
+            Diet Plans
+          </h1>
+          <p className="md:text-2xl mb-14">
+            Choose a plan to get started on your weight loss journey!
+          </p>
+        </div>
 
-      <div className="grid grid-cols-1 gap-10 px-20 justify-items-center lg:grid-cols-3 pb-40">
-        <PlanCard
-          color="#4BA82A"
-          price="$10"
-          plan="Standard"
-          planList={standardPlan()}
-        />
-        <PlanCard
-          color="#E72F2F"
-          price="$30"
-          plan="Basic"
-          planList={basicPlan()}
-        />
-        <PlanCard
-          color="#EABA12"
-          price="$50"
-          plan="Gold"
-          planList={goldPlan()}
-        />
+        <div className="grid grid-cols-1 gap-10 px-20 justify-items-center lg:grid-cols-3 pb-40">
+          <PlanCard
+            color="#1C3CAA"
+            price="$10"
+            plan="Standard"
+            planList={standardPlan()}
+          />
+          <PlanCard
+            color="#E72F2F"
+            price="$30"
+            plan="Basic"
+            planList={basicPlan()}
+          />
+          <PlanCard
+            color="#EABA12"
+            price="$50"
+            plan="Gold"
+            planList={goldPlan()}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

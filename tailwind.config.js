@@ -11,9 +11,17 @@ module.exports = {
     fontFamily: {
       quicksand: ["Quicksand", "sans-serif"],
     },
+
+    borderColor: (theme) => ({
+      DEFAULT: theme("colors.gray.300", "currentColor"),
+      green: "#4BA82A",
+    }),
     extend: {
       textColor: {
         green: "#4BA82A",
+      },
+      outline: {
+        green: "2px solid #4BA82A",
       },
     },
   },
