@@ -50,7 +50,7 @@ const DietPlans = () => {
           <h1 className="uppercase text-green font-semibold text-3xl sm:text-4xl md:text-5xl mt-20 mb-2">
             Diet Plans
           </h1>
-          <p className="md:text-2xl text-sm sm:text-xl mb-14 px-6">
+          <p className="md:text-2xl text-sm sm:text-xl text-center mb-14 px-6">
             Choose a plan to get started on your weight loss journey!
           </p>
         </div>

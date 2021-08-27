@@ -16,7 +16,7 @@ const Testimonials = () => {
             <AnnotationIcon className="h-10 md:h-16 relative md:bottom-1" />
             Testimonials
           </h1>
-          <p className="md:text-2xl text-sm sm:text-xl">
+          <p className="md:text-2xl text-sm sm:text-xl text-center">
             See what our customers are saying about DietGuru!
           </p>
         </div>
