@@ -18,7 +18,7 @@ const Contact = () => {
           <h1 className="uppercase text-4xl md:text-5xl mb-2 text-green font-semibold">
             Contact Us
           </h1>
-          <p className="md:text-2xl mb-12 text-sm sm:text-xl">
+          <p className="md:text-2xl text-center mb-12 text-sm sm:text-xl">
             Reach out to us. We’ll be glad to answer any of your questions!
           </p>
         </div>
